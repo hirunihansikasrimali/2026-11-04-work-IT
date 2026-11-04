@@ -1,5 +1,25 @@
-function btnClickName(){
-    let txtName=document.getElementById("txtName").value;
-    document.getElementById("lblCustomerName").innerText=txtName;
-    document.getElementById("olCustomers").innerHTML+=`<li>${txtName}</li>`;
+const customerList=[];
+
+function addCustomer(){
+    let customerId=document.getElementById("txtId").value;
+    let customerName=document.getElementById("txtName").value;
+    let customerAge=document.getElementById("txtAge").value;
+    let customerAddress=document.getElementById("txtAddress").value;
+    let customerSalary =document.getElementById("txtSalary").value;
+
+    let customer = {
+        id:customerId,
+        name:customerName,
+        age:customerAge,
+        address:customerAddress,
+        salary:customerSalary
+    };
+
+    customerList.push(customer);
+    console.log(customerList);
+    olCustomer();
+}
+
+function loadCustomerTable(){
+    
 }
