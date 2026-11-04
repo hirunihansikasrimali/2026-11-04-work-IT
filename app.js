@@ -17,9 +17,27 @@ function addCustomer(){
 
     customerList.push(customer);
     console.log(customerList);
-    olCustomer();
+    loadCustomerTable();
 }
 
 function loadCustomerTable(){
-    
+
+    let body=`<tr>
+    <th>Customer ID </th>
+    <th>Customer Name </th>
+    <th>Customer Age </th>
+    <th>Customer Address </th>
+    <th>Customer Salary </th>
+    </tr>`;
+    for(let customer of customerList){
+        body+=`<tr>
+        <td>${customer.id}</td>
+        <td>${customer.name}</td>
+        <td>${customer.age}</td>
+        <td>${customer.address}</td>
+        <td>${customer.salary}</td>
+        </tr>`;
+
+    }
+    document.getElementById("tblCustomers").innerHTML=body;
 }

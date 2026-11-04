@@ -8,24 +8,22 @@
 <body>
     <input type="text" id="txtId" placeholder="customer ID">
     <input type="text" id="txtName" placeholder="customer name">
-    <input type="number" id="txtAge" placeholder="customer age">
+    <input type="text" id="txtAge" placeholder="customer age">
     <input type="text" id="txtAddress" placeholder="customer address">
-    <input type="number" id="txtSalary" placeholder="customer salary">
+    <input type="text" id="txtSalary" placeholder="customer salary">
     <button onclick="addCustomer()">Add Customer</button>
 
-    <table>
-        <tr>
-            <th>Customer ID</th>
-            <th>Customer Name</th>
-            <th>Customer Age</th>
-            <th>Customer Address</th>
-            <th>Customer Salary</th>
-        </tr>
-    </table>
-
+    <table id="tblCustomers"> </table>
     <ol id="olCustomers"></ol>
 
+    <input type="text" id="txtIteamId" placeholder="iteam ID">
+    <input type="text" id="txtIteamName" placeholder="iteam name">
+    <input type="text" id="txtIteamPrice" placeholder="iteam price">
+    <input type="text" id="txtIteamQty" placeholder="iteam quantity">
+    <button onclick="addIteam()">Add Iteam</button>
 
+    <table id="tblIteams"> </table>
+    <ol id="olIteams"></ol>
 
     <!-- <input type="text" id="txtName" placeholder="Enter your name">
     <button onclick="btnClickName()">Submit</button>
@@ -40,6 +38,6 @@
     <ol id="olIteams"></ol> -->
 
      <script src="app.js"></script>
-    <!-- <script src="app2.js"></script> -->
+    <script src="app2.js"></script>
 </body>
 </html>
