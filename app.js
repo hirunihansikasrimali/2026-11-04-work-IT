@@ -1,10 +1,10 @@
 const iteamList=[];
 
 function addIteams(){
-    let iteamId=document.getElementById("txtId2").value;
-    let iteamName=document.getElementById("txtName").value;
-    let iteamPrice=document.getElementById("txtPrice").value;
-    let iteamQty=document.getElementById("txtQty").value;
+    let iteamId=document.getElementById("txtIteamId").value;
+    let iteamName=document.getElementById("txtIteamName").value;
+    let iteamPrice=document.getElementById("txtIteamPrice").value;
+    let iteamQty=document.getElementById("txtIteamQty").value;
 
 let iteam = {
         id:iteamId,
