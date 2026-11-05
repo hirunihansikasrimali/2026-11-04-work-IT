@@ -1,4 +1,4 @@
-const = customerList=[];
+const customerList=[];
 
 function addCustomer(){
     let customerId=document.getElementById("txtId").value;
