@@ -14,11 +14,11 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 30px;
-    color: #222;
+    color: #23007a;
 }
 
 .container {
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     padding: 25px;
     margin: 25px auto;
     max-width: 1100px;
@@ -48,12 +48,13 @@ input {
 }
 
 input:focus {
+    background-color: #550104;
     border-color: #01092b;
 }
 
 button {
     padding: 12px 20px;
-    background-color: #01092b;
+    background-color: #550104;
     color: white;
     border: none;
     border-radius: 5px;
@@ -61,7 +62,7 @@ button {
 }
 
 button:hover {
-    background-color: #01092b;
+    background-color: #550104;
 }
 
 table {
