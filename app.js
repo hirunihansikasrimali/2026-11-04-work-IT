@@ -1,43 +1,36 @@
-const customerList=[];
+const iteamList=[];
 
-function addCustomer(){
-    let customerId=document.getElementById("txtId").value;
-    let customerName=document.getElementById("txtName").value;
-    let customerAge=document.getElementById("txtAge").value;
-    let customerAddress=document.getElementById("txtAddress").value;
-    let customerSalary =document.getElementById("txtSalary").value;
+function addIteams(){
+    let iteamId=document.getElementById("txtId2").value;
+    let iteamName=document.getElementById("txtName").value;
+    let iteamPrice=document.getElementById("txtPrice").value;
+    let iteamQty=document.getElementById("txtQty").value;
 
-    let customer = {
-        id:customerId,
-        name:customerName,
-        age:customerAge,
-        address:customerAddress,
-        salary:customerSalary
+let iteam = {
+        id:iteamId,
+        name:iteamName,
+        price:iteamPrice,
+        qty:iteamQty
     };
+    iteamList.push(iteam);
+    console.log(iteamList);
+    loadIteams();
 
-    customerList.push(customer);
-    console.log(customerList);
-    loadCustomerTable();
 }
-
-function loadCustomerTable(){
-
+function loadIteams(){
     let body=`<tr>
-    <th>Customer ID </th>
-    <th>Customer Name </th>
-    <th>Customer Age </th>
-    <th>Customer Address </th>
-    <th>Customer Salary</th>
+    <th>Iteam ID </th>
+    <th>Iteam Name </th>
+    <th>Iteam Price </th>
+    <th>Iteam Qty </th>
     </tr>`;
-    for(let customer of customerList){
+    for(let iteam of iteamList){
         body+=`<tr>
-        <td>${customer.id}</td>
-        <td>${customer.name}</td>
-        <td>${customer.age}</td>
-        <td>${customer.address}</td>
-        <td>${customer.salary}</td>
+        <td>${iteam.id}</td>
+        <td>${iteam.name}</td>
+        <td>${iteam.price}</td>
+        <td>${iteam.qty}</td>
         </tr>`;
-
-    }
-    document.getElementById("tblCustomers").innerHTML=body;
+    }   
+    document.getElementById("tblIteams").innerHTML=body;
 }
