@@ -27,7 +27,7 @@ function loadCustomerTable(){
     <th>Customer Name </th>
     <th>Customer Age </th>
     <th>Customer Address </th>
-    <th>Customer Salary </th>
+    <th>Customer Salary</th>
     </tr>`;
     for(let customer of customerList){
         body+=`<tr>
