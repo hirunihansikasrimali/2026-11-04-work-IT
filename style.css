@@ -48,12 +48,12 @@ input {
 }
 
 input:focus {
-    border-color: #4361ee;
+    border-color: #01092b;
 }
 
 button {
     padding: 12px 20px;
-    background-color: #4361ee;
+    background-color: #01092b;
     color: white;
     border: none;
     border-radius: 5px;
@@ -61,7 +61,7 @@ button {
 }
 
 button:hover {
-    background-color: #3048bd;
+    background-color: #01092b;
 }
 
 table {
@@ -77,7 +77,7 @@ th, td {
 }
 
 th {
-    background-color: #4361ee;
+    background-color: #01092b;
     color: white;
 }
 
